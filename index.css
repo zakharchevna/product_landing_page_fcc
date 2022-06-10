@@ -1,0 +1,332 @@
+*, ::after,
+::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&display=swap');
+
+
+:root {
+   --text-color: #1a0336;
+   --background-color: #e2c1e0;
+   font-family: 'Lato', sans-serif;
+}
+
+img {
+   display: block;
+   width: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+.wrapper {
+   max-width: 980px;
+   overflow: hidden;
+   margin: auto;
+   padding: 5px;
+}
+
+.header {
+
+}
+
+.nav {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: center;
+   padding: 20px
+}
+#header-img {
+   max-width: 100px;
+}
+.logo {
+   padding: 10px;
+}
+
+.menu { 
+   
+}
+
+.menu__list {
+   list-style-type: none;
+   justify-content: space-between;
+}
+
+.menu__items {
+   flex: 1 1;
+   padding: 5px;
+}
+
+.nav-link {
+   text-decoration: none;
+   font-size: 18px;
+   color: var(--text-color);
+}
+
+.nav-link:hover {
+   text-decoration: underline;
+}
+
+.first-lesson {
+   margin: 10px;
+   padding: 10px;
+   text-align: center;
+}
+
+.first-lesson__heading {
+   padding: 0px 0px 10px 0px;
+   font-family: 'Dancing Script', cursive;
+   font-size: 22px;
+   color: var(--text-color);
+}
+
+.first-lesson__form input {
+   padding: 10px;
+   margin: 7px;
+}
+
+#submit {
+   background-color: var(--background-color);
+   cursor: pointer;
+   border: #590153;
+   color: rgb(114, 6, 80);
+   font-weight: 700;
+   margin: 10px 0px 0px 0px;
+   padding: 10px 25px;
+   font-family: 'Dancing Script', cursive;
+}
+
+#submit:hover {
+   background-color: #8e518a;
+   color: #ffffff;
+}
+
+@media (min-width: 500px) {
+   .nav {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+   }
+   .menu {
+      flex: 1;
+   }
+   .menu__list {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+   }
+   .nav-link {
+      padding: 0px 15px 0px 0px;
+      display: block;
+      font-size: 20px;
+   }
+}
+
+@media (min-width: 600px) {
+   .first-lesson__heading {
+         font-size: 32px;
+      }
+   .first-lesson__form input {
+      padding: 14px;
+      margin: 10px;
+      width: 300px;
+   }
+   #submit {
+      font-size: 18px;
+      width: 200px;
+   }
+}
+
+.main {}
+
+.about {
+   padding: 10px 0px 10px 0px;
+}
+
+.about__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+}
+
+.about__item-icon {
+   max-width: 100px;
+   padding: 0px 20px 0px 0px;
+}
+
+.about__item-content h2 {
+   text-align: center;
+   font-family: 'Dancing Script',cursive;
+   padding: 0px 0px 10px 0px;
+   color: var(--text-color);
+   font-size: 24px;
+}
+
+.about__item-content p {
+   line-height: 1.2;
+}
+
+@media (min-width: 650px) {
+   .about__item {
+   flex-direction: row;
+   padding: 25px 0px 0px 0px;
+   }
+   .about {
+      padding: 70px 0px 100px 0px;
+   }
+}
+
+.lessons {
+   padding: 20px 0px 20px 0px;
+   text-align: center;
+}
+
+.lessons iframe {
+   max-width: 100%;
+}
+
+.lessons__heading {
+   color: var(--text-color);
+   font-size: 24px;
+   padding: 0px 0px 15px 0px;
+}
+
+@media (min-width: 500px) {
+   .lessons iframe {
+      max-width: 70%;
+   }
+}
+
+.price {
+   padding: 30px 5px 30px 5px;
+}
+
+.price__items {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.price__item {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #1a0336;
+   padding: 30px 15px 30px 15px;
+   margin: 5px 5px 10px 5px;
+   text-align: center;
+
+}
+
+.price-item {
+   background-color: var(--background-color);
+}
+
+.price-item__title {
+   font-size: 24px;
+   color: #ffffff;
+   padding: 15px;
+   background-color: #985f94;
+   margin-bottom: 10px;
+   font-family: 'Dancing Script', cursive;
+}
+
+.price-item__subtitle {
+   font-size: 32px;
+   font-weight: 700;
+   font-family: 'Dancing Script', cursive;
+   color: var(--text-color);
+   padding: 10px;
+}
+
+.price-item__text {
+   font-size: 16px;
+   padding: 15px;
+   flex: 1 1 auto;
+}
+
+.price-item__btn {
+   flex: 0 0;
+   padding: 15px 20px;
+   font-size: 24px;
+   font-weight: 700;
+   font-family: 'Dancing Script', cursive;
+   background-color: #985f94;
+}
+
+.btn {}
+
+.btn__link {
+   color: var(--text-color);
+   text-decoration: none;
+   color: #ffffff;
+}
+
+@media (min-width: 780px) {
+   .price__items {
+      flex-direction: row;
+   }
+   .price__item {
+      flex: 0 1 33.333%;
+      padding: 20px 10px;
+      margin: 5px;
+   }
+   .price-item__text {
+      flex: 1 1 auto;
+   }
+   .price-item__title {
+
+   }
+}
+
+.footer {
+   background-color: var(--background-color);
+}
+
+.footer-nav {
+   padding: 15px;
+}
+
+.footer-nav__menu {
+   display: flex;
+   flex-direction: column;
+   list-style-type: none;
+   font-size: 20px;
+}
+
+.menu__link {
+   text-decoration: none;
+   color: var(--text-color);
+}
+
+.menu__link:hover {
+   text-decoration: underline;
+}
+@media (min-width: 420px) {
+   .footer-nav__menu {
+      flex-direction: row;
+      justify-content: center;
+   }
+}
